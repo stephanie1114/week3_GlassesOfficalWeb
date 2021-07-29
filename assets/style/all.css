@@ -1,0 +1,533 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* CSS reset end */
+/* fonts */
+/* font-family: 'Noto Sans TC', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* base */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans TC', sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 1110px;
+  margin: 0 auto; }
+
+.section-padding {
+  padding: 60px 0 80px 0; }
+
+.title {
+  text-align: center;
+  color: #650300;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  margin-bottom: 40px; }
+
+/* header */
+header {
+  padding: 30px 88px;
+  background-color: #AA0601; }
+
+.header-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.logo {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/logo.png") no-repeat;
+  width: 80px;
+  height: 48.57px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 30px; }
+
+.list li {
+  margin-left: 64px; }
+
+.list a {
+  color: #FFFFFF;
+  display: block; }
+
+.list a:hover {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: -4px; }
+
+/* banner */
+.banner {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png") no-repeat center;
+  height: 840px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.banner-title {
+  text-align: right;
+  color: #650300; }
+
+.banner-title h4 {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 400; }
+
+.banner-title h2 {
+  font-size: 64px;
+  line-height: 96px;
+  font-weight: 700; }
+
+/* introduce */
+.introduce {
+  background-color: #FBF2F2; }
+
+.intro-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.intro-icon li {
+  width: 255px; }
+
+.icon-color {
+  color: #650300; }
+
+.intro-icon div {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px; }
+
+.intro-icon h5 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #650300;
+  text-align: center;
+  margin-bottom: 8px; }
+
+.intro-icon p {
+  line-height: 24px; }
+
+/* classic */
+.classic-type li {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.type-pic {
+  width: 635px;
+  height: 320px; }
+
+.style-a {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-1.png") no-repeat center;
+  background-size: cover; }
+
+.style-b {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-2.png") no-repeat center;
+  background-size: cover; }
+
+.style-c {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-3.png") no-repeat center;
+  background-size: cover; }
+
+.type-name {
+  color: #AA0601;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 900;
+  font-style: italic;
+  padding: 0 30px; }
+
+.style-icon {
+  margin-right: 8px; }
+
+.classic-type .row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+
+.classic-type .mb-0 {
+  margin-bottom: 0; }
+
+/* co-branding */
+.co-branding {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/bg.png") no-repeat center; }
+
+.white {
+  color: #FFFFFF; }
+
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative; }
+
+.brand li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.brand-pic {
+  width: 540px;
+  height: 455px; }
+
+.brand-a {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png") no-repeat top;
+  background-size: cover;
+  position: relative; }
+
+.brand-b {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png") no-repeat top;
+  background-size: cover;
+  position: relative; }
+
+.brand-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 108px;
+  color: #AA0601;
+  z-index: 2; }
+
+.brand-a::before, .brand-b::before {
+  content: '';
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 540px;
+  height: 455px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+/* recommend */
+.consumer-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.card {
+  width: 255px;
+  height: 460px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 6px #00000029;
+          box-shadow: 0 2px 6px #00000029;
+  border: 1px solid #DEE2E6; }
+
+.card .card-pic {
+  width: 255px;
+  height: 256px; }
+
+.card .text {
+  padding: 16px;
+  height: 204px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.card .text .name {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 8px; }
+
+.card .text .sentence {
+  font-size: 16px;
+  line-height: 24px; }
+
+.card .text .date {
+  font-size: 14px;
+  line-height: 21px;
+  color: #707070; }
+
+.consumer-a {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/rec-1.png") no-repeat top; }
+
+.consumer-b {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/rec-2.png") no-repeat top; }
+
+.consumer-c {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/rec-3.png") no-repeat top; }
+
+.consumer-d {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/rec-4.png") no-repeat top; }
+
+/* contact */
+.contact {
+  background-color: #FBF2F2; }
+
+.form-wrap {
+  width: 730px;
+  margin: 0 auto;
+  line-height: 24px; }
+
+.form-wrap h3 {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center; }
+
+.form-wrap p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 20px; }
+
+.form-wrap label, .form-wrap input {
+  display: block; }
+
+.form-wrap label {
+  margin-bottom: 4px;
+  line-height: 24px; }
+
+.form-wrap input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #000;
+  height: 50px;
+  padding: 12px 16px 14px 16px;
+  margin-bottom: 16px; }
+
+.form-wrap textarea {
+  width: 100%;
+  height: 136px;
+  background-color: transparent;
+  padding: 12px 16px 14px 16px;
+  margin-bottom: 16px; }
+
+.form-wrap .agree {
+  width: auto;
+  display: inline-block;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0); }
+
+.form-wrap .agree-text {
+  width: auto;
+  display: inline-block;
+  margin-bottom: 40px; }
+
+.form-wrap .submit {
+  width: 350px;
+  padding: 16px 0;
+  background-color: #AA0601;
+  color: #FFFFFF;
+  text-align: center;
+  border: none;
+  margin: 0 auto;
+  line-height: 24px;
+  font-weight: 700;
+  cursor: pointer; }
+
+.form-wrap .submit:hover {
+  background-color: #9c0500; }
+
+/* footer */
+footer {
+  background-color: #AA0601;
+  padding: 32px 0 39px 0;
+  color: #FFFFFF; }
+
+footer a {
+  color: #FFFFFF; }
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px; }
+
+.footer-list, .footer-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer-list li {
+  margin-right: 48px;
+  line-height: 24px; }
+
+.footer-list li a:hover {
+  border-bottom: 1px solid #FFF; }
+
+.footer-icon li {
+  margin-left: 32px; }
+
+.footer-icon li a:hover {
+  opacity: 0.85; }
+
+.contact-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px; }
+
+.contact-list p a {
+  font-size: 36px;
+  line-height: 54px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
+
+.contact-list a:hover {
+  border-bottom: 1px solid #FFF; }
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 16px; }
+
+.copyright {
+  border-top: 1px solid #FFF;
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.copyright p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 24px; }
+
+.copyright-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.copyright-list li {
+  margin-left: 48px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400; }
+
+.copyright-list a:hover {
+  color: rgba(255, 255, 255, 0.8); }
+
+/*# sourceMappingURL=all.css.map */
